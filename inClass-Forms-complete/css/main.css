@@ -1,0 +1,87 @@
+/* lets import a font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Lets start with our navigation */
+.main-nav {
+    background-color:#003b64;
+    min-height:125px;
+    color:white;
+}
+
+.top-nav {
+    color:#a9e0ea;
+    font-size:12px;
+    
+}
+
+.top-nav > li {
+    padding:7px;
+}
+
+.shop-nav > li > img {
+    padding: 10px;
+    margin-top: 10px;
+} 
+
+.shop-nav > li.list-item {
+    margin:25px 10px 0 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.breadcrumb {
+    background-color:white;
+}
+
+.breadcrumb-item {
+    font-size:10px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: ":";
+}
+
+.war-btn {
+    border:1px solid black;
+    margin:5px;
+    border-radius: 5px;
+    line-height:20px;
+    min-height:50px;
+}
+
+
+.footer {
+    position:fixed;
+    bottom:0;
+    min-height:100px;
+    background-color:#003b64;
+}
+/* A few helpers */
+#main-price{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+}
+
+#main-price:before {
+content:"$"
+}
+
+.after-bb:after{
+    background-image:url('../img/bb_logo.svg');
+    background-size: 40px 40px;
+    width:40px;
+    height:40px;
+    display:inline-block;
+    vertical-align: middle;
+    content:"";
+}
+
+
+.mice-type {
+    font-size:11px;
+}

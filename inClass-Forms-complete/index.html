@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BootStrap and Jquery Inclass Demo</title>
+
+
+<!-- Below is code that we can use to hook in BOOTSTRAP and Jquery without having to download it to our computers. This is a fast way of using the most current and up to date code. -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+<body>
+<!-- Start By Creating Containers for our rows -->
+
+
+<!-- Lets create a fluid container that will stretch the width of the browser -->
+<div class="container-fluid main-nav">
+    <!-- Now lets create a row and col to make sure evryting sits inside nicely. -->
+    <div class="row">
+        <div class="col">
+                <!-- Lets create anohter container inside to hold everthing within our grid -->
+        <div class="container">
+                <div class="row">
+                    <!--Columns can be set to have numbers. You can have a maximum of 12 columns. This means you can create any multiple of columns, as long as the add to 12.  -->
+                    <div class="col-lg-4">
+                        <ul class="nav top-nav ">
+                            <li class="list-item">Best Buy for Business</li>
+                            <li class="list-item">Best Buy Blog</li>
+                        </ul>
+                    </div>
+                    <!-- Use ml-auto class to push content to the right hand side of container -->
+                    <div class="col-lg-6 ml-auto">
+                        <ul class="nav top-nav">
+                            <li class="list-item">Find a Store</li>
+                            <li class="list-item">Order Status</li>
+                            <li class="list-item">Helo Centre</li>
+                            <li class="list-item">Francais</li>
+                            <li class="list-item">Sign In</li>
+                            <li class="list-item">My Account</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lets create a row that will hold our columns -->
+                <div class="row">
+                    <!--This will be one column that will be in our header  -->
+                    <div class="col">
+                        <!-- Lets create an un-ordered list to hold out nav items and call it nav -->
+                        <ul class="nav shop-nav">
+                            <!-- Lets add the class name list-item to our nav for later -->
+                            <li class=""><img src="img/bb_logo.svg" width="75"></li>
+                            <li class="list-item">shops</li>
+                            <li class="list-item">brands</li>
+                            <li class="list-item">deals</li>
+                            <li class="list-item">services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- This container will be regular width and will not need to be fluid -->
+<div class="container">
+    <!-- Lets create a row for a breadcrumb trail -->
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item">Computers &amp; Tablets</li>
+                    <li class="breadcrumb-item">laptops &amp; MacBooks</li>
+                    <li class="breadcrumb-item">Apple Laptops</li>
+                    <li class="breadcrumb-item">Apple Macbook Air</li>
+                    <li class="breadcrumb-item">Product Information</li> 
+                </ol>
+            </nav>
+        </div>
+
+    </div>
+
+<!-- Lets Create a new Row to hold the title of the product -->
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- lets make a new headline here -->
+            <h4>New! Apple MacBook Air 13.3" w/ Retina - Gold (Intel Core i5 1.6GHz / 128GB SSD / 8GB RAM) - French</h4>
+            <h6 class="mice-type">Model #: MREE2C/A | Web Code: 13231650 | Release Date: 11-07-2018</h6>
+        </div>
+
+        <div class="col-lg-4 ml-auto">
+                <h5>No reviews yet</h5>
+                <h6>Be the first to write a review</h6>
+        </div>
+    </div>
+    
+    <!-- lets put in a headline Row break -->
+    
+    <hr/>
+
+    <!-- Lets create another row and column set -->
+    <div class="row">
+        <div class="col">
+            <img src="img/laptop-apple.png" width="" height="" alt="macbook pro">
+        </div>
+        <div class="col">
+            <!-- Here we will start to build the pricing  -->
+            <h3 id="main-price">1,499.99</h3>
+            <h6 class="after-bb">Sold and shipped by: </h6>
+
+            <!-- So we can have 4 buttons of equal size, lets divide this col up into another row and col set -->
+
+            <div class="row">
+                <div class="col war-btn" id="war-2">
+                    <h6>2 Year </h6>
+                    <h6 class="mice-type">248.99</h6> 
+                </div>
+                <div class="col war-btn" id="war-3">
+                    <h6>3 Year</h6>
+                    <h6 class="mice-type"> 278.99</h6>
+                </div>
+                <div class="col war-btn" id="war-4">
+                    <h6>4 year</h6>
+                    <h6 class="mice-type">    399</h6>
+                </div>
+                <div class="col war-btn" id="no-plan">
+                    <h6>No Plan</h6>
+                    <h6 class="mice-type"> 0</h6>
+                </div>
+            </div>
+            <hr/>
+            <!-- lets make anotther row -->
+            <div class="row">
+                <div class="col">
+                    <h6>1 Special Offer</h6>
+                    <ul>
+                        <li class="mice-type">Get an HP DeskJet 3752 or HP Deskjet 3755 (Seagrass colour) printer for $29.99 when you buy any laptop, desktop, or tablet.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- This container will also be fluid since it will be our footer. -->
+
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+        <script src="js/main.js"></script>
+</body>
+</html>
